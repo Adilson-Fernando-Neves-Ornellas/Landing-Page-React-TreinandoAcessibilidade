@@ -15,8 +15,8 @@ export default function Acessibilidade() {
     const estado = !menu;
     setMenu(estado);
     const containerButoes = document.getElementsByClassName("containerAcessibilidade")[0];
-    if (menu) {
-        containerButoes.style.display = "block"; 
+    if (menu === true) {
+        containerButoes.style.display = "flex"; 
     } else {
         containerButoes.style.display = "none"; 
     }
