@@ -1,0 +1,35 @@
+.buttonAbrirMenuAcessibilidade{
+    position: fixed;
+    max-width: 95vw;
+    min-height: 40px;
+    min-width: 40px;
+    left: initial;
+    right: initial;
+    top: 50%;
+    bottom: initial;
+}
+.buttonIconAcessibilidade{
+    background-color: transparent;
+    border: 0;
+}
+
+.containerAcessibilidade{
+    background-color: var(--accessibility-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.conteinerButtonTamletra{
+    display: flex;
+    gap: 10px
+}
+.buttonAumentarTam{
+    background-color: transparent;
+    color: var(--font-color);
+    border:0
+}
+.btnAceC{
+    background-color: var(--accessibility-background-color);
+    border: 0;
+}

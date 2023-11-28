@@ -1,0 +1,407 @@
+
+/*Cabeçario*/
+header{
+    background: var(--preto-primario);
+    width: 100%;
+    padding: 29px 0px;
+}
+.icone{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    min-width: 227px;
+    width: 12%;
+    display:block;
+    color: var( --branco-primario);
+    text-align: center;
+}
+
+/*Parte01, o banner principal*/
+.imgbanner{
+    display: block;
+    width: 100%;
+}
+
+.imgbannerpq{
+    display: none;
+}
+
+/*Parte2, escrito com imagem dos 3 computador*/
+.parte2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.tdtextopart2{
+     width: 40%;
+     padding: 73px 0px 0px;
+     display: flex;
+     flex-direction: column;
+     align-items:center ;
+}
+.subtitlepart2{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+.titlepart2{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+.paragpart2{
+    padding: 28px 0px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.figtotal{
+    width: 100%;
+    display: contents;
+}
+.imgparte2{
+    min-width: 315px;
+    width: 16%;
+    display: block;
+    padding: 73px 0px 0px;
+}
+
+/*Parte3, os 3 caixotes*/
+.tdscaixotes{
+    padding: 178px 0px 80px;
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    justify-content: center;
+}
+.cadacaixote{
+    background-color: var(--cinza-claro);
+    border-radius: 15px;
+    padding: 36px 26px 26px;
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+    align-items: center;
+    justify-content: center;
+}
+.imgcaixote{
+    padding: 0px 0px 27px;
+    display: block;
+    width: 34%;
+}
+.legendcaixote{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--preto-primario)
+}
+
+/*Parte4, imagens notebook*/
+.parte4{
+    padding: 0px 72px 62px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 39px;
+}
+.imgparte4{
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 62px;
+}
+
+/*Parte5-mais caixotes*/
+.caixotes2{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 192px 72px 0px;
+
+}
+.cdcaixote2{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    background-color: var(--cinza-claro);
+    border-radius: 15px;
+}
+.imgcaixote2{
+    width: 25%;
+    padding: 35px 0px 15px;
+    display: block;
+}
+.legendcaixote2{
+    padding: 0px 32px 65px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--preto-primario)
+}
+
+/*Parte6-texto com imagem final*/
+.parte06{
+    padding: 108px 0px 244px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.tdtextpart6{
+    padding: 108px 0px 50px;
+    width: 29%;
+    text-align: center;
+}
+.titlepart6{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
+.paragrafpart6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.figpart6{
+    width: 71%;
+}
+.imgparte6{
+    display: block;
+    width: 100%;
+}
+.imgparte06pq{
+    display: none;
+}
+
+/*Parte7-final*/
+.faixafinal{                   
+    background: var(--preto-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icones{
+   display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: center;
+}
+li{
+    width: 35%;
+}
+.imgicon{
+    padding: 38px 22px 16px;
+}
+.textofinal{
+    text-align: center;
+    padding: 0px 0px 38px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: var(--cinza-variant);
+}
+
+/*Modificações para tela 4k */
+@media screen and (min-width: 2500px){
+    /*Parte2, escrito com imagem dos 3 computador*/
+    .subtitlepart2{
+        font-size: 64px;
+        line-height: 78px;
+    }
+    .titlepart2{
+        font-size: 98px;
+        line-height: 116px;
+    }
+    .paragpart2{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    /*Parte3, os 3 caixotes*/
+    .legendcaixote{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: var(--preto-primario)
+    }
+
+    /*Parte5-mais caixotes*/
+    .legendcaixote2{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    /*Parte6-texto com imagem final*/
+    .titlepart6{
+        font-size: 64px;
+        line-height: 78px;
+    }
+    .paragrafpart6{
+        font-size: 32px;
+        line-height: 48px;
+    }
+    /*Parte7-final*/
+    .textofinal{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+}
+
+
+
+
+
+
+/*Modificações para tela Mobile */
+@media screen and (max-width: 1024px) 
+{
+    /*Parte01, o banner principal*/
+    .imgbanner{
+    display: none;
+        }
+
+    .imgbannerpq{
+    display: block;
+    width: 100%;
+    }
+
+    /*Parte 02*,Parte2, escrito com imagem dos 3 computador*/
+    .tdtextopart2{
+        width: 87%;
+        text-align: center;
+    }
+    .subtitlepart2{
+        font-size: 20px;
+        line-height: 24px;
+    }  
+    .titlepart2{
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .paragpart2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .imgparte2{
+        width: 100%;
+        display: block;
+        max-width: 239px;
+        min-width: 239px;
+    }
+
+    /*Parte3,os 3 caixotes*/
+    .tdscaixotes{
+        padding: 90px 30px 80px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .cadacaixote{
+        width: 99%;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+        align-items: center;
+        justify-content: center;
+    }
+    .imgcaixote{
+        width: auto;
+        padding: 0px 0px 27px;  
+        display: block;
+        
+    }
+    .legendcaixote{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    /*Parte4, imagens notebook*/
+    .parte4{
+        grid-template-areas: "img2 img1" 
+                             "img3 img3";
+        padding: 0px 23px 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 14px;  
+        row-gap: 23px;      
+    }
+    .imgparte4{
+        top: 32px;
+    } 
+    .img1{
+        grid-area: img1;
+    }  
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+
+    /*Parte5-mais caixotes*/
+    .caixotes2{
+        flex-direction: column;
+        padding: 112px 23px 98px;
+    }
+    .cdcaixote2{
+        width: 99%;
+        margin: 0
+    }
+    .imgcaixote2{
+        width: auto;
+        padding: 35px 0px 15px;
+        display: block;
+
+    }
+    .legendcaixote2{
+        font-size: 14px;
+    }
+
+    /*Parte6-texto com imagem final*/
+    .parte06{
+        padding: 0px 0px 87px;
+        flex-direction: column-reverse;
+    }
+    .tdtextpart6{
+        padding: 50px 0px 0px;
+        width: 84%;
+    }
+    .titlepart6{
+        padding: 0px 0px 8px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .figpart6{
+        width: 100%;
+    }
+    .imgparte6{
+        display: none;
+    }
+    .imgparte06pq{
+        display: block;
+        width: 100%;
+    }
+
+    /*Parte7-final*/
+    .imgicon{
+        padding: 38px 16px 16px;
+    }
+    .textofinal{
+        max-width: 280px
+    }
+
+}
+
